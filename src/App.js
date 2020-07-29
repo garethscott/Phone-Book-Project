@@ -1,26 +1,120 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { NumInput } from './components/NumInput'
+import { Button } from './components/Button'
+// import { List } from './components/List'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    state = {
+        number: "",
+        list: ["01352757748", "01352756914"]
+    }
+
+
+    handleNumValue = (e) => {
+        this.setState({ number: e.target.value })
+    }
+
+    handleSubValue = (e) => {
+        e.preventDefault()
+        let temp = this.state.list
+        this.setState({
+            list: [...temp, this.state.number],
+            number: ""
+        })
+    }
+
+
+    render() {
+        console.log(this.state.list)
+        console.log(this.state.number)
+        return (
+            <div className="app">
+                <div className="wrapper">
+                    <div className="frame">
+                        <div className="input-and-btn">
+                            <form onSubmit={this.handleSubValue}>
+                                <NumInput handleNumValue={this.handleNumValue} number={this.state.number} />
+                                <Button />
+                            </form>
+                        </div>
+                        <ul className="list-list">
+                            {this.state.list.map(item => (
+                                <li key={item}>{item}</li>
+                            ))}
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
+
+
+// export const NumInput = (props) => {
+//     return (
+//         <input onChange={props.handleNumValue} value={props.number} placeholder="Enter Number..."
+//             className="textbox" />
+//     )
+// }
+
+// export const Button = (props) => {
+//     return (
+//         <button type="submit" className="btn">Add Contact</button>
+//     )
+// }
+
+
+
+
+
+
+// class App extends React.Component {
+//     state = {
+//         number: "",
+//         list: ["01352757748", "01352756914"]
+//     }
+
+//     handleNumValue = (e) => {
+//         this.setState({ number: e.target.value })
+//     }
+
+//     handleSubValue = () => {
+//         let temp = this.state.list
+//         this.setState({ list: [...temp, this.state.number] })
+//     }
+
+
+
+//     render() {
+//         console.log(this.state.list)
+//         console.log(this.state.number)
+//         return (
+//             <div className="app">
+//                 <div className="wrapper">
+//                     <div className="frame">
+//                         <div className="input-and-btn">
+//                             <form onSubmit={this.handleSubValue}>
+//                                 <NumInput handleNumValue={this.handleNumValue} number={this.state.number} />
+//                                 <Button />
+//                             </form>
+//                         </div>
+//                         <div className="list">
+//                             <h1>{this.state.number}</h1>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
+
+
+
+
+
+
 
 export default App;
