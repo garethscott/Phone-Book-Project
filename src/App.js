@@ -7,7 +7,7 @@ import { Button } from './components/Button'
 class App extends React.Component {
     state = {
         number: "",
-        list: ["01352757748", "01352756914"]
+        list: []
     }
 
 
