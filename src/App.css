@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(252, 179, 70);
 }
 .wrapper {
     background-color: rgb(107, 145, 250);
