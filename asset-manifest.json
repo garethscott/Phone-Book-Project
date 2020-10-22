@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Phone-Book-Project/static/css/main.d64cd6d2.chunk.css",
-    "main.js": "/Phone-Book-Project/static/js/main.63d2268d.chunk.js",
-    "main.js.map": "/Phone-Book-Project/static/js/main.63d2268d.chunk.js.map",
+    "main.css": "/Phone-Book-Project/static/css/main.56345e70.chunk.css",
+    "main.js": "/Phone-Book-Project/static/js/main.768354b0.chunk.js",
+    "main.js.map": "/Phone-Book-Project/static/js/main.768354b0.chunk.js.map",
     "runtime-main.js": "/Phone-Book-Project/static/js/runtime-main.3930ec4b.js",
     "runtime-main.js.map": "/Phone-Book-Project/static/js/runtime-main.3930ec4b.js.map",
     "static/js/2.ca8c6830.chunk.js": "/Phone-Book-Project/static/js/2.ca8c6830.chunk.js",
     "static/js/2.ca8c6830.chunk.js.map": "/Phone-Book-Project/static/js/2.ca8c6830.chunk.js.map",
     "index.html": "/Phone-Book-Project/index.html",
-    "precache-manifest.0a5ae11771c053b6c49ba890878e1a7a.js": "/Phone-Book-Project/precache-manifest.0a5ae11771c053b6c49ba890878e1a7a.js",
+    "precache-manifest.274284ce97993e3bf61d6092e69cd398.js": "/Phone-Book-Project/precache-manifest.274284ce97993e3bf61d6092e69cd398.js",
     "service-worker.js": "/Phone-Book-Project/service-worker.js",
-    "static/css/main.d64cd6d2.chunk.css.map": "/Phone-Book-Project/static/css/main.d64cd6d2.chunk.css.map",
+    "static/css/main.56345e70.chunk.css.map": "/Phone-Book-Project/static/css/main.56345e70.chunk.css.map",
     "static/js/2.ca8c6830.chunk.js.LICENSE.txt": "/Phone-Book-Project/static/js/2.ca8c6830.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3930ec4b.js",
     "static/js/2.ca8c6830.chunk.js",
-    "static/css/main.d64cd6d2.chunk.css",
-    "static/js/main.63d2268d.chunk.js"
+    "static/css/main.56345e70.chunk.css",
+    "static/js/main.768354b0.chunk.js"
   ]
 }
